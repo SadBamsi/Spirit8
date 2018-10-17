@@ -1,0 +1,101 @@
+@import '../../node_modules/reset-css/sass/_reset.scss';
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,600i,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:700');
+@import url('/_fonts.scss');
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+// settings
+body {
+	margin: 0;
+	padding: 0;
+}
+// Fonts settings
+
+$goth-f: 'Gotham Pro Narrow';
+$open-f: 'OpenSans';
+$lato-f: 'Lato';
+
+// Main section 
+
+.main {
+	background-color: #080808;
+	padding-top: 57px;
+	&-head {
+		margin-bottom: 225px;
+		&-title {
+			color: #fff;
+			font-family: $lato-f;
+			font-size: 24px;
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 24px;
+		}
+		&-nav {
+			list-style: none;
+			&-item {
+				display: inline-block;
+				margin-right: 30px;
+				&:nth-child(6) {
+					margin-right: 0;
+				}
+				&:hover {
+					&:after {
+						visibility: visible;
+					}
+				}
+				&:after {
+					visibility: hidden;
+					display: block;
+					content: '';
+					height: 3px;
+					width: 54px;
+					margin: 0 auto;
+					margin-top: 20px;
+					background: linear-gradient(to right, #212121 50%, #fcac45 50%);
+				}
+				
+			}
+			&-link {
+				color: #fff;
+				font-family: $lato-f;
+				font-size: 14px;
+				font-weight: 700;
+				text-decoration: none;
+				text-transform: uppercase;
+				&:hover {
+					color: #fff;
+					text-decoration: none;	
+				}
+			}
+		}
+	}
+	&-title {
+		text-align: center;
+		font-size: 44px;
+		color: #999;
+		font-family: $open-f;
+		font-weight: 300;
+		text-transform: uppercase;
+		margin-bottom: 20px;
+		&-strong {
+			font-weight: 700;
+			color: #fcad45;
+			font-family: $open-f;
+		}
+	}
+	&-text {
+		text-align: center;
+		font-family: $open-f;
+		font-size: 20px;
+		color: rgba(255,255,255,.75);
+		font-weight: 400;
+		margin-bottom: 300px;
+		&-strong {
+			font-weight: 700;
+		}
+	}
+	&-arrow {
+		
+	}
+}
